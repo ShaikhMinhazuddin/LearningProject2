@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static '4.css' %}">
+    </head>
+    <body>
+        <div class="login-form">
+            <h1>Login Form</h1>
+            <form action="loginuser" method="post">
+                {% csrf_token %}
+                <p>User Name: </p>
+                <input type="text" name="username" placeholder="User Name">
+                <p>Password:</p>
+                <input type="password" name="password" placeholder="Password">
+                {% for message in messages %}
+                <h4 style="color:red">{{message}}</h4>
+                {% endfor %}
+                <button type="submit">Login</button>
+                <p> New user , <a href='register'>Register</a>
+                
+        <script src="" async defer></script>
+    </body>
+</html>

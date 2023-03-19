@@ -1,0 +1,38 @@
+.bulletcard{
+    background-color: rgb(233, 233, 233);
+    justify-content: space-around;
+    justify-items: center;
+    padding: 15px auto 15px auto;
+    margin: 20px auto 100% auto;
+    border: rgb(117, 117, 117); 
+    border-style: groove;
+    align-items: center ;
+    border-radius: 24px;
+}
+.sep {
+    display: flex; 
+    justify-content:center;
+    background-color: #fff;
+    padding: 5px 50px 5px 50px;
+    margin: 20px auto 20px auto;
+    border: rgb(117, 117, 117);
+    border-style: hidden;
+    border-radius: 12px;
+    
+}
+h3{
+    font-size: large;
+    text-align: center;
+    font-weight: 500;
+}
+h5{
+    font-size: larger;
+    text-align: justify;
+    font-weight: 300;
+}
+.sep img{
+    width: 200px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

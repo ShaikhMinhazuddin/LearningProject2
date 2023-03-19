@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    align-items: center;
+    background-image: url("login.webp");
+    background-size: cover;
+}
+.logincard{
+    display: flex;
+    border-style: inset;
+    border-color: rgb(0, 0, 0);
+    margin: 220px 600px 0px 265px;
+    justify-content: space-between;
+    background-color: bisque;
+}
+.logincard img{
+    width: 405px;
+    padding: 0px;
+    
+}
+.loginform input{
+    display: block;
+    align-items: center;
+    margin: 40px 80px 40px 60px;
+}
+.buttons button{
+    height: 20px;
+    width: 150px;
+    align-items: center;
+}
+.buttons button:hover{
+    background-color: lime;
+}

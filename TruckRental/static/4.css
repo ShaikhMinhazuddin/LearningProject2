@@ -1,0 +1,64 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body
+{
+    background: url(/static/istockphoto-520703835-612x612.jpg) no-repeat;
+    background-size: cover;
+    color: black;
+}
+.login-form
+{
+
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    background-color: lightgray;
+    opacity: 0.8;
+    border-radius: 25px;    
+}
+.login-form h1
+{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+.login-form p
+{
+    font-size: 17px;
+    margin-top: 15px 0;
+    margin-left: 7%;
+}
+.login-form input
+{
+    font-size: 10px;
+    padding: 12px 10px;
+    width: 80%;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 7%;
+}
+.login-form button
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 30px 100px;
+    padding: 10px 30px;
+    width: 50%;
+    border: 0;
+    border-radius: 15px;
+    background-color: lightblue;
+}
+.login-form button:hover
+{
+    background-color: gray;
+    color: yellow;
+    cursor: pointer;
+}

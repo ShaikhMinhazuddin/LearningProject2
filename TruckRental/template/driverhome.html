@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="{% static '2.css' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+  </head>
+
+  <body>
+    <header>
+      <nav> 
+        <img src="{% static 'Capture1.JPG' %}" class="logo" alt="" />
+        <ul>
+          <li><a href="dhome">HOME</a></li>
+          <li><a href="#">BikePaySeat</a></li>
+          <li><a href="#">CarPaySeat</a></li>
+          <li><a href="#">BusPaySeat</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="logoutuser" style="color: red; ">Log Out</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <img src="{% static 'giphy.webp' %}" alt="image not found" />
+      <div class="happycustomer">
+        <h3>Our Top Drivers of the Month</h3>
+        <hr />
+        <div class="details">
+          <img src="{% static 'happycustomer.jpg' %}" alt="" height="75px" />
+          <h4>Sk Zahir Hossain</h4>
+          <h6>
+            Delightful to have such a wonderful platform like this. It makes it
+            easier for small scale industries. I would definitely recommend it 
+            to use. <br><h5>Rs 570/hr Earning</h5>
+          </h6>
+        </div>
+      </div>
+      <div class="req">
+        <div class="shippment">
+          <h4>We are ready with the Shippment Requests. Please Check</h4>
+        </div class="shippmentb">
+          <button><a href="rhome">+ Check Requests</a></button>
+        </div>
+      </div>
+      <div class="creator">
+        <div><h4>Creators of the Project</h4><hr></div>
+        <div class="cdetails">
+          
+        <div class="m">
+          <img src="{% static 'sm.jpg' %}" alt="">
+          <h4>Shaikh Minhaz</h4>
+          <h6>21CSE460</h6>
+        </div>
+        <div class="s">
+          <img src="{% static 'sohaib.jfif' %}" alt="">
+          <h4>Md Sohaib Islam</h4>
+          <h6>21CSE276</h6>
+        </div>
+        <div class="b">
+          <img src="{% static 'bp.jpg' %}" alt="">
+          <h4>Biswa Ranjan Prusty</h4>
+          <h6>21CSE454</h6>
+        </div>
+      </div>
+      </div>
+    </main>
+    <footer>
+      <div class="bottom">
+        <p>This Project is created by Shaikh Minhaz</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    background: rgb(231, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #000;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #000;
+}
+
+.bottom {
+    background-color: #000;
+    margin-top: 40px;
+    height: 100px;
+}
+
+div p {
+    color: #fff;
+}
+
+.logo {
+    width: 150px;
+    margin: 0px;
+}
+
+.happycustomer{
+    background-color: rgb(240, 236, 236);
+    height: 325px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.happycustomer h3{
+    text-align: left;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.details{
+    background-color: #fff;
+    width: 200px;
+    height: 250px ;
+    border-style: hidden;
+    border-radius: 12px;
+    margin: 10px auto 10px auto;
+    
+}
+.details img{
+    border-radius: 18px;
+    margin-top: 10px;
+    border-style: groove;
+    width: 150px;
+    height: 150px;
+}
+.details h6{
+    font-weight: 400;
+    padding-top: 5px;
+}
+.stars{
+    font-size: 400% ;
+}
+.booking{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: hidden ;
+    box-shadow: inset;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.booking button{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 18px;
+    background-color: lime;
+}
+.booking button:hover{
+    background-color: yellowgreen;
+}
+
+.booking button a{
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    text-align: center;
+    font-weight: 400;
+    font-size: large;
+}
+.main{
+    display: block;
+}
+.animatedtruck{
+    display: flex;
+    width: 625px;
+    margin-top: 35px;
+}
+.formclass{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 35px;
+}
+.cformship{
+    border: rgb(201, 201, 201);
+    border-style: groove;
+    border-radius: 12px;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-around;
+    justify-items: center;
+    width: 500px
+}
+.photos{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.photos h3{
+    padding-right: 10px;
+    font-size: small;
+    /* font-weight: 100; */
+}
+.button{
+    margin: 20px auto 10px auto;
+    display: flex;
+    align-items: center;
+    
+}
+.button input{
+    margin-left: 200px;
+    color: rgb(0, 0, 0);
+    width: 125px;
+    height: 35px;
+    background: #35ff82;
+    border-radius: 24px;
+
+}
+.button button{
+    width: 250px;
+    justify-content: space-between;
+}
+.button1{
+    background-color: limegreen;
+}
+.button2{
+    background-color: orangered;
+}
+.button1 a{
+    text-decoration: none;
+    font-size: large;
+    color: #000;
+}
+.button2 a{
+    text-decoration: none;
+    font-size: large;
+    color: #000;
+}
+.button :hover{
+    background-color: rgb(0, 255, 17);
+}
+.creator{
+    background-color: rgb(237, 236, 236);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.creator hr{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.cdetails{
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.m img{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 10px 10px 10px 10px;
+}
+.m{
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: outset;
+    border-color: rgb(164, 164, 164);
+    
+}
+.s{
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: outset;
+    border-color: rgb(164, 164, 164);
+    
+}
+.b{
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: outset;
+    border-color: rgb(164, 164, 164);
+    
+}
+.s img{
+    width:150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 10px 10px 10px 10px;
+}
+.b img{
+    width:150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 10px 10px 10px 10px;
+
+}
+.req{
+    justify-content: space-around;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    background-color: #fff;
+    height: 50px;
+}
+.req button{
+    background-color: lime;
+    width: 200px;
+    height: 35px;
+    border-radius: 25px;
+    border: rgb(120, 120, 120);
+}
+.req button a{
+    text-decoration: none;
+    color: #000;
+}
+.req button:hover{
+    background-color: rgb(122, 255, 61);
+}

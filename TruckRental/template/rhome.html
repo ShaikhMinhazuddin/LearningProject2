@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="{% static '2.css' %} " >
+    <link rel="stylesheet" href="{% static 'rhome.css' %}".css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="{% static 'Capture1.JPG' %}" class="logo" alt="" />
+        <ul>
+          <li><a href="dhome">HOME</a></li>
+          <li><a href="#">BikePaySeat</a></li>
+          <li><a href="#">CarPaySeat</a></li>
+          <li><a href="#">BusPaySeat</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <img src="{% static 'truck5.webp' %}" alt="" style="width: 250px" />
+      <div class="bulletcard">
+        <div>
+          <h2>Todays List</h2>
+        </div>
+        {% for detail in details %}
+        <div class="sep">
+           <div>
+            <div class="img">
+                <img src="{% static 'Thor Dark_4184.jpeg' %}" alt="">
+            </div>
+          
+            <h3>FROM LOC: {{detail.fadd}}       <br>TO LOC: {{detail.tadd}}      <br>PRICE:Rs. {{detail.budg}} </h3>
+            <h5>
+               Dimensions: {{detail.dim1}}mm X {{detail.dim2}}mm<br>
+               Type:{{detail.typ}}<br>
+               Load weight:{{detail.loadWgt}}<br>
+               Desc:{{detail.desc}}
+            </h5>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </main>
+    <footer>
+      <div class="bottom">
+        <p>This Project is created by Shaikh Minhaz</p>
+      </div>
+    </footer>
+  </body>
+</html>

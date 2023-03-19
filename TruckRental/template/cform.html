@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="{% static '2.css'%}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="{% static 'logo.jpg' %}" class="logo" alt="" />
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="BikePaySeat.html">BikePaySeat</a></li>
+          <li><a href="CarPaySeat.html">CarPaySeat</a></li>
+          <li><a href="BusPaySeat.html">BusPaySeat</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="formclass">
+      <img src="{% static 'truck3.webp'%}" class="animatedtruck" alt="image not found" />
+      <div class="cformship">
+        <h2>Add Details Here </h2>
+        <hr>
+        <form action="cform" method="POST">
+          {% csrf_token %}
+        <div class="photos">
+            <h3>Add Photos: </h3>
+            <input type="file" name="Photos" id="dpic"  required >
+        </div>
+        <div class="photos">
+            <h3>Dimensions :</h3>
+            <input type="number" name="dim1" id="" placeholder="in mm" >
+            <input type="number" name="dim2" placeholder="in mm" >
+        </div>
+        <div class="photos">
+            <h3>Required Truck Type: </h3>
+            <select name="type" id="">
+                <option value="">--Select Truck Type--</option>
+                <option value="pickup">Pickup</option>
+                <option value="mini">MiniTruck </option>
+                <option value="Light">Light Truck</option>
+                <option value="Tanker">Tanker</option>
+                <option value="Tipper">Tipper</option>
+            </select>
+        </div>
+        <div class="photos">
+            <h3> Load Weight: </h3>
+            <input type="number" name="weight" id="" placeholder="Weight in Kgs">
+        </div>
+        <div class="photos">
+            <h3>To Address: </h3>
+            <textarea name="tadd" id="" cols="45" rows="3"></textarea>
+        </div>
+        <div class="photos">
+            <h3>From Address: </h3>
+            <textarea name="fadd" id="" cols="45" rows="3"></textarea>
+        </div>
+        <div class="photos">
+            <h3>Delivery Date: </h3>
+            <input type="date" name="ddate" id="">
+        </div>
+        <div class="photos">
+            <h3>Budget : </h3>
+            <input type="number" name="budg" id="" placeholder="in Rupees">
+        </div>
+        <div class="photos">
+            <h3>Description: </h3>
+            <textarea name="desc" id="" cols="45" rows="4"></textarea>
+        </div>
+        <div class="button">
+            <input type="submit" />
+            {% comment %} <input type="button" placeholder="Cancel" value="" name="cancel"/> {% endcomment %}
+        </div>
+      </form>
+      </div>
+    </main>
+    <footer>
+      <div class="bottom">
+        <p>This Project is created by Shaikh Minhaz</p>
+      </div>
+    </footer>
+  </body>
+</html>
